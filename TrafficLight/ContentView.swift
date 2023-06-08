@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var tapCount = 0
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            VStack {
+                TrafficSignalView(color: .red, opacity: 1)
+                TrafficSignalView(color: .yellow)
+                TrafficSignalView(color: .green)
+            }
+            Spacer()
+            Button(action: { tapCount += 1 }) {
+                Text("Tap count: \(tapCount)")
+                    .font(.title)
+            }
         }
-        .padding()
+        .padding(.top, 30)
     }
 }
 

@@ -11,6 +11,7 @@
 		FD9130A52A3189400025CE6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9130A42A3189400025CE6F /* ContentView.swift */; };
 		FD9130A72A3189410025CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9130A62A3189410025CE6F /* Assets.xcassets */; };
 		FD9130AA2A3189410025CE6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9130A92A3189410025CE6F /* Preview Assets.xcassets */; };
+		FD9130B12A31895F0025CE6F /* TrafficSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9130B02A31895F0025CE6F /* TrafficSignalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FD9130A42A3189400025CE6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD9130A62A3189410025CE6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD9130A92A3189410025CE6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD9130B02A31895F0025CE6F /* TrafficSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficSignalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				FD9130A22A3189400025CE6F /* TrafficLightApp.swift */,
 				FD9130A42A3189400025CE6F /* ContentView.swift */,
+				FD9130B02A31895F0025CE6F /* TrafficSignalView.swift */,
 				FD9130A62A3189410025CE6F /* Assets.xcassets */,
 				FD9130A82A3189410025CE6F /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD9130A52A3189400025CE6F /* ContentView.swift in Sources */,
+				FD9130B12A31895F0025CE6F /* TrafficSignalView.swift in Sources */,
 				FD9130A32A3189400025CE6F /* TrafficLightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +279,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
