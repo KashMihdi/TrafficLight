@@ -34,15 +34,15 @@ struct ContentView: View {
             VStack(spacing: 8) {
                 TrafficSignalView(
                     color: .red,
-                    opacity: currentColor == .red
+                    turnOnLight: currentColor == .red
                 )
                 TrafficSignalView(
                     color: .yellow,
-                    opacity: currentColor == .yellow
+                    turnOnLight: currentColor == .yellow
                 )
                 TrafficSignalView(
                     color: .green,
-                    opacity: currentColor == .green
+                    turnOnLight: currentColor == .green
                 )
                 
                 Spacer()
