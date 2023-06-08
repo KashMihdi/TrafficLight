@@ -12,16 +12,16 @@ struct ContentView: View {
     enum TrafficColor {
         case red, yellow, green, switchedOff
         
-        var nextColor: TrafficColor {
+        mutating func nextColor() {
             switch self {
             case .red:
-                return .yellow
+                self = .yellow
             case .yellow:
-                return .green
+                self = .green
             case .green:
-                return .red
+                self = .red
             case .switchedOff:
-                return .red
+                self = .red
             }
         }
     }
@@ -31,27 +31,28 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            VStack(spacing: 12) {
+            VStack(spacing: 8) {
                 TrafficSignalView(
                     color: .red,
-                    opacity: currentColor == .red ? 1 : 0.5,
-                    showShadow: currentColor == .red
+                    opacity: currentColor == .red
                 )
                 TrafficSignalView(
                     color: .yellow,
-                    opacity: currentColor == .yellow ? 1 : 0.5,
-                    showShadow: currentColor == .yellow
+                    opacity: currentColor == .yellow
                 )
                 TrafficSignalView(
                     color: .green,
-                    opacity: currentColor == .green ? 1 : 0.5,
-                    showShadow: currentColor == .green
+                    opacity: currentColor == .green
                 )
+                
                 Spacer()
+                
                 SwitchButtonView(
                     title: currentColor == .switchedOff ? "START" : "NEXT",
-                    backgroundColor: currentColor == .switchedOff ? .red : .green,
-                    action: { currentColor = currentColor.nextColor }
+                    backgroundColor: currentColor == .switchedOff
+                        ? .red
+                        : .green,
+                    action: { currentColor.nextColor() }
                 )
             }
             .padding()

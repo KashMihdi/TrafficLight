@@ -19,9 +19,9 @@ struct SwitchButtonView: View {
                 .font(.title.bold())
                 .padding(
                     EdgeInsets(
-                        top: 8,
+                        top: 12,
                         leading: 80,
-                        bottom: 8,
+                        bottom: 12,
                         trailing: 80
                     )
                 )
