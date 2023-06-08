@@ -8,21 +8,54 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var tapCount = 0
-    var body: some View {
-        VStack {
-            VStack {
-                TrafficSignalView(color: .red, opacity: 1)
-                TrafficSignalView(color: .yellow)
-                TrafficSignalView(color: .green)
-            }
-            Spacer()
-            Button(action: { tapCount += 1 }) {
-                Text("Tap count: \(tapCount)")
-                    .font(.title)
+    
+    enum TrafficColor {
+        case red, yellow, green, switchedOff
+        
+        var nextColor: TrafficColor {
+            switch self {
+            case .red:
+                return .yellow
+            case .yellow:
+                return .green
+            case .green:
+                return .red
+            case .switchedOff:
+                return .red
             }
         }
-        .padding(.top, 30)
+    }
+    
+    @State private var currentColor: TrafficColor = .switchedOff
+
+    var body: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+            VStack(spacing: 12) {
+                TrafficSignalView(
+                    color: .red,
+                    opacity: currentColor == .red ? 1 : 0.5,
+                    showShadow: currentColor == .red
+                )
+                TrafficSignalView(
+                    color: .yellow,
+                    opacity: currentColor == .yellow ? 1 : 0.5,
+                    showShadow: currentColor == .yellow
+                )
+                TrafficSignalView(
+                    color: .green,
+                    opacity: currentColor == .green ? 1 : 0.5,
+                    showShadow: currentColor == .green
+                )
+                Spacer()
+                SwitchButtonView(
+                    title: currentColor == .switchedOff ? "START" : "NEXT",
+                    backgroundColor: currentColor == .switchedOff ? .red : .green,
+                    action: { currentColor = currentColor.nextColor }
+                )
+            }
+            .padding()
+        }
     }
 }
 

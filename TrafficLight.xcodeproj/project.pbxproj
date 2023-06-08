@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD608B082A320C96007EFC65 /* SwitchButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD608B072A320C96007EFC65 /* SwitchButtonView.swift */; };
 		FD9130A32A3189400025CE6F /* TrafficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9130A22A3189400025CE6F /* TrafficLightApp.swift */; };
 		FD9130A52A3189400025CE6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9130A42A3189400025CE6F /* ContentView.swift */; };
 		FD9130A72A3189410025CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9130A62A3189410025CE6F /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD608B072A320C96007EFC65 /* SwitchButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButtonView.swift; sourceTree = "<group>"; };
 		FD91309F2A3189400025CE6F /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9130A22A3189400025CE6F /* TrafficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightApp.swift; sourceTree = "<group>"; };
 		FD9130A42A3189400025CE6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				FD9130A22A3189400025CE6F /* TrafficLightApp.swift */,
 				FD9130A42A3189400025CE6F /* ContentView.swift */,
+				FD608B072A320C96007EFC65 /* SwitchButtonView.swift */,
 				FD9130B02A31895F0025CE6F /* TrafficSignalView.swift */,
 				FD9130A62A3189410025CE6F /* Assets.xcassets */,
 				FD9130A82A3189410025CE6F /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				FD9130A52A3189400025CE6F /* ContentView.swift in Sources */,
 				FD9130B12A31895F0025CE6F /* TrafficSignalView.swift in Sources */,
+				FD608B082A320C96007EFC65 /* SwitchButtonView.swift in Sources */,
 				FD9130A32A3189400025CE6F /* TrafficLightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
